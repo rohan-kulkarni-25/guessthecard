@@ -1,13 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/welcomePage1/Welcome';
+import React, { useState } from 'react'
+import Theme from './components/themePage2/Theme';
+
 
 function App() {
-  return (
-    <>
-      <Welcome></Welcome>
-    </>
-  );
+
+  const [page, setPage] = useState(1)
+
+  if (page === 1) {
+    return (
+      <>
+        <Welcome setPage={setPage}></Welcome>
+      </>
+    );
+  } else if (page === 2) {
+    return (
+      <>
+        <Theme setPage={setPage}></Theme>
+      </>
+    );
+  } else if (page === 3) {
+    return (
+      <>
+        Hi
+      </>
+    );
+
+  }
+
+
 }
 
 export default App;

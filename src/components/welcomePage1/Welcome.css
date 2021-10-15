@@ -49,7 +49,7 @@
   height: 3rem;
   border-radius: 12px;
   animation-name: translate;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-delay: 1s;
   background-color: greenyellow;
@@ -79,7 +79,10 @@
     width: 3rem;
     background-color: greenyellow;
   }
-  100%{
+  50%{
+    width: 25rem;
+    background-color: greenyellow;
+  }100%{
     width: 25rem;
     background-color: greenyellow;
   }
