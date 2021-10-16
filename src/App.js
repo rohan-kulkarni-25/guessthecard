@@ -8,8 +8,8 @@ import Game from './components/gamePage4/Game';
 
 function App() {
 
-  const [page, setPage] = useState(1);
-  const [level, setLevel] = useState(1);
+  const [page, setPage] = useState(4);
+  const [level, setLevel] = useState('1');
   const [theme, setTheme] = useState('a');
   if (page === 1) {
     return (

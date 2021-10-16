@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer';
 import './Game.css'
 import GameBoard from './GameBoard'
 
@@ -13,6 +14,7 @@ export default function Game(props) {
         <p className="credits"><p>5</p><p>CREDIT</p></p>
       </div>
       <GameBoard gameLevel={props.gameLevel}></GameBoard>
+      <Footer></Footer>
     </div>
   )
 }

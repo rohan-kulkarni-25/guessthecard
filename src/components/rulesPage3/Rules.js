@@ -1,6 +1,7 @@
 import React from 'react'
 import './Rules.css'
 import Next from '../../icons/next.png'
+import Footer from '../Footer/Footer';
 
 export default function Rules(props) {
 
@@ -29,6 +30,7 @@ export default function Rules(props) {
       </div>
       <label htmlFor="terms" className="inputcheck" required><input type="checkbox" name="terms" id="tcheck" />I Accept<span>Rules</span></label>
       <button className="rulesbtn" id="ruleb" onClick={letsplay}>Let's Play <img src={Next} alt="" srcset="" /></button>
+      <Footer></Footer>
     </div>
   )
 }

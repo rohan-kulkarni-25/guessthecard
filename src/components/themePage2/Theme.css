@@ -73,3 +73,7 @@
     transform: translateY(-200%);
   }
 }
+
+.borderred{
+  border: 2px solid red;
+}
