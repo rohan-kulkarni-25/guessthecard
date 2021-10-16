@@ -3,6 +3,8 @@ import './Game.css'
 import GameBoard from './GameBoard'
 
 export default function Game(props) {
+  console.log(props.gameLevel);
+  console.log(props.gameTheme);
   return (
     <div className="gamepage">
       <p className="gamehead">GUESS THE CARD</p>

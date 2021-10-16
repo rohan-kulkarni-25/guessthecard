@@ -8,12 +8,9 @@ import Game from './components/gamePage4/Game';
 
 function App() {
 
-  const [page, setPage] = useState(2);
+  const [page, setPage] = useState(1);
   const [level, setLevel] = useState(1);
   const [theme, setTheme] = useState('a');
-
-  console.log(level);
-  console.log(theme);
   if (page === 1) {
     return (
       <>
@@ -35,7 +32,7 @@ function App() {
   } else if (page === 4) {
     return (
       <>
-        <Game setPage={setPage} gameLevel={level}></Game>
+        <Game setPage={setPage} gameLevel={level} gameTheme={theme}></Game>
       </>
     )
   }

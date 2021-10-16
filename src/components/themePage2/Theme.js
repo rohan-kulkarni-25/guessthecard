@@ -12,13 +12,11 @@ export default function Theme(props) {
 
   const setThemes = () => {
     const value = document.getElementById('thm').value;
-    console.log(value)
     props.setTheme(value);
   }
 
   const setLevels = () => {
     const value = document.getElementById('lvl').value;
-    console.log(value)
     props.setLevel(value);
   }
 

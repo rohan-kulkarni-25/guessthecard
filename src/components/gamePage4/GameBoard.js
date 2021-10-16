@@ -3,7 +3,9 @@ import './GameBoard.css'
 
 export default function GameBoard(props) {
 
-  if (props.gameLevel === 1) {
+  console.log(typeof (props.gameLevel))
+
+  if (props.gameLevel === '1') {
     return (
       <div className="gameboard">
         <div className="hor">
@@ -18,7 +20,7 @@ export default function GameBoard(props) {
         </div>
       </div>
     )
-  } else if (props.gameLevel === 2) {
+  } else if (props.gameLevel === '2') {
     return (
       <div className="gameboard">
         <div className="hor">
@@ -38,7 +40,7 @@ export default function GameBoard(props) {
         </div>
       </div>
     )
-  } else if (props.gameLevel === 3) {
+  } else if (props.gameLevel === '3') {
     return (
       <div className="gameboard">
         <div className="hor">
@@ -62,8 +64,10 @@ export default function GameBoard(props) {
           <p></p>
         </div>
       </div>
+    )
+  } else {
+    return (
+      <>Something Went Wrong</>
     )
   }
-
-
 }
