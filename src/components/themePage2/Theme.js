@@ -7,10 +7,7 @@ export default function Theme(props) {
   const themeSelected = () => {
     document.getElementById('themb').style.backgroundColor = 'greenyellow';
     document.getElementById('thep').style.animationName = `translatetop`
-    setInterval(() => {
-      props.setPage(3);
-    }, 1000);
-
+    props.setPage(3);
   }
   return (
     <div className="themepage" id="thep">
